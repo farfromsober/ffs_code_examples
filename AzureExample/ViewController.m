@@ -7,16 +7,53 @@
 //
 
 #import "ViewController.h"
+#import "AzureDefines.h"
+#import "ABSManager.h"
 
 @interface ViewController ()
-
+@property (strong, nonatomic) ABSManager *manager;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    self.manager = [[ABSManager alloc] init];
+
+    //UPLOAD IMAGE
+    
+    UIImage *testImage = [UIImage imageNamed:@"test.png"];
+
+    [self.manager giveMeSaSURLBlobName:@"test.png"
+                         containerName:AZURE_CONTAINER
+                      completionSaSURL:^(NSURL *sasURL) {
+                          if (sasURL != nil) {
+                              [self.manager handleImageToUploadAzureBlob:sasURL
+                                                                 blobImg:testImage
+                                                    completionUploadTask:^(BOOL result, NSError *error) {
+                                                        //Completion block: Yes if all was correct
+                              }];
+                          } else {
+                              NSLog(@"Error al obtener la SAS URL");
+                          }
+        
+                      }];
+    
+    //DOWNLOAD IMAGE
+    [self.manager giveMeSaSURLBlobName:@"test.png"
+                         containerName:AZURE_CONTAINER
+                      completionSaSURL:^(NSURL *sasURL) {
+                          if (sasURL != nil) {
+                              [self.manager handleSaSURLToDownload:sasURL
+                                               completionHandleSaS:^(UIImage *image, NSError *error) {
+                                  //Completion block: here we have the image retrieved
+                                                   if (image != nil) {
+                                                   
+                                                   }
+                              }];
+                          }
+                      }];            
 }
 
 - (void)didReceiveMemoryWarning {

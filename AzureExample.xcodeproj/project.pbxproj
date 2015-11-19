@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		B84091A91BFBEA9600838522 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B84091A81BFBEA9600838522 /* main.m */; };
 		B84091AC1BFBEA9600838522 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B84091AB1BFBEA9600838522 /* AppDelegate.m */; };
-		B84091AF1BFBEA9600838522 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B84091AE1BFBEA9600838522 /* ViewController.m */; };
 		B84091B21BFBEA9600838522 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84091B01BFBEA9600838522 /* Main.storyboard */; };
 		B84091B41BFBEA9600838522 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84091B31BFBEA9600838522 /* Assets.xcassets */; };
 		B84091B71BFBEA9600838522 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B84091B51BFBEA9600838522 /* LaunchScreen.storyboard */; };
+		B84091C01BFBEBCE00838522 /* WindowsAzureMobileServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B84091BF1BFBEBCE00838522 /* WindowsAzureMobileServices.framework */; };
+		B84091C31BFBEC3D00838522 /* ABSManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B84091C21BFBEC3D00838522 /* ABSManager.m */; };
+		B84091C71BFBF24300838522 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = B84091C61BFBF24300838522 /* test.png */; };
+		B87718911BFE85F900240453 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B87718901BFE85F900240453 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +24,16 @@
 		B84091AA1BFBEA9600838522 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B84091AB1BFBEA9600838522 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B84091AD1BFBEA9600838522 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B84091AE1BFBEA9600838522 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B84091B11BFBEA9600838522 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B84091B31BFBEA9600838522 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B84091B61BFBEA9600838522 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B84091B81BFBEA9600838522 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B84091BF1BFBEBCE00838522 /* WindowsAzureMobileServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WindowsAzureMobileServices.framework; sourceTree = "<group>"; };
+		B84091C11BFBEC3D00838522 /* ABSManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABSManager.h; sourceTree = "<group>"; };
+		B84091C21BFBEC3D00838522 /* ABSManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABSManager.m; sourceTree = "<group>"; };
+		B84091C41BFBEDE700838522 /* AzureDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AzureDefines.h; sourceTree = "<group>"; };
+		B84091C61BFBF24300838522 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
+		B87718901BFE85F900240453 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B84091C01BFBEBCE00838522 /* WindowsAzureMobileServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,14 +67,16 @@
 		B84091A61BFBEA9600838522 /* AzureExample */ = {
 			isa = PBXGroup;
 			children = (
+				B84091BE1BFBEBCE00838522 /* Azure */,
 				B84091AA1BFBEA9600838522 /* AppDelegate.h */,
 				B84091AB1BFBEA9600838522 /* AppDelegate.m */,
 				B84091AD1BFBEA9600838522 /* ViewController.h */,
-				B84091AE1BFBEA9600838522 /* ViewController.m */,
+				B87718901BFE85F900240453 /* ViewController.m */,
 				B84091B01BFBEA9600838522 /* Main.storyboard */,
 				B84091B31BFBEA9600838522 /* Assets.xcassets */,
 				B84091B51BFBEA9600838522 /* LaunchScreen.storyboard */,
 				B84091B81BFBEA9600838522 /* Info.plist */,
+				B84091C51BFBF24300838522 /* Resources */,
 				B84091A71BFBEA9600838522 /* Supporting Files */,
 			);
 			path = AzureExample;
@@ -77,6 +88,25 @@
 				B84091A81BFBEA9600838522 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B84091BE1BFBEBCE00838522 /* Azure */ = {
+			isa = PBXGroup;
+			children = (
+				B84091BF1BFBEBCE00838522 /* WindowsAzureMobileServices.framework */,
+				B84091C11BFBEC3D00838522 /* ABSManager.h */,
+				B84091C21BFBEC3D00838522 /* ABSManager.m */,
+				B84091C41BFBEDE700838522 /* AzureDefines.h */,
+			);
+			path = Azure;
+			sourceTree = "<group>";
+		};
+		B84091C51BFBF24300838522 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B84091C61BFBF24300838522 /* test.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +169,7 @@
 				B84091B71BFBEA9600838522 /* LaunchScreen.storyboard in Resources */,
 				B84091B41BFBEA9600838522 /* Assets.xcassets in Resources */,
 				B84091B21BFBEA9600838522 /* Main.storyboard in Resources */,
+				B84091C71BFBF24300838522 /* test.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,8 +180,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B84091AF1BFBEA9600838522 /* ViewController.m in Sources */,
+				B84091C31BFBEC3D00838522 /* ABSManager.m in Sources */,
 				B84091AC1BFBEA9600838522 /* AppDelegate.m in Sources */,
+				B87718911BFE85F900240453 /* ViewController.m in Sources */,
 				B84091A91BFBEA9600838522 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +295,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AzureExample/Azure",
+				);
 				INFOPLIST_FILE = AzureExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.biscarri.AzureExample;
@@ -274,6 +310,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/AzureExample/Azure",
+				);
 				INFOPLIST_FILE = AzureExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.biscarri.AzureExample;
@@ -300,6 +340,7 @@
 				B84091BD1BFBEA9600838522 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
