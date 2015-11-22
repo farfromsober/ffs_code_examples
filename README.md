@@ -6,6 +6,10 @@
 - WindowsAzureMobileServices.framework
 
 ---
+#API obtenerSAS url
+*Nombre:* sas
+*Parámetros de entrada:* blobName, containerName
+
 
 #Ejemplo de uso
 

@@ -21,5 +21,7 @@
 - (void)handleImageToUploadAzureBlob:(NSURL *)theURL
                              blobImg:(UIImage*)blobImg
                 completionUploadTask:(void (^)(BOOL result, NSError * error))completion;
+
 + (NSString*)getCDNURLStringForblobName:(NSString *)blobName;
+
 @end

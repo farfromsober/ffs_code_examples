@@ -41,19 +41,14 @@
                       }];
     
     //DOWNLOAD IMAGE
-    [self.manager giveMeSaSURLBlobName:@"test.png"
-                         containerName:AZURE_CONTAINER
-                      completionSaSURL:^(NSURL *sasURL) {
-                          if (sasURL != nil) {
-                              [self.manager handleSaSURLToDownload:sasURL
-                                               completionHandleSaS:^(UIImage *image, NSError *error) {
-                                  //Completion block: here we have the image retrieved
-                                                   if (image != nil) {
-                                                   
-                                                   }
-                              }];
-                          }
-                      }];            
+   
+  [self.manager handleSaSURLToDownload:[NSURL URLWithString:[ABSManager getCDNURLStringForblobName:@"test.png" ] ]
+                   completionHandleSaS:^(UIImage *image, NSError *error) {
+      //Completion block: here we have the image retrieved
+                       if (image != nil) {
+                       
+                       }
+  }];
 }
 
 - (void)didReceiveMemoryWarning {
